@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile Card</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+
+    /* Decent Attractive Gradient */
+    background: linear-gradient(135deg, #2c003e, #7a0019);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.card{
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    width:330px;
+    padding:30px;
+    text-align:center;
+    border-radius:18px;
+    color:white;
+    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+    position:relative;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform: translateY(-6px);
+}
+
+.pro{
+    position:absolute;
+    top:20px;
+    left:20px;
+    background:#ff4d6d;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.profile-img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:3px solid #ff4d6d;
+    margin-bottom:15px;
+}
+
+h2{
+    margin:5px 0;
+}
+
+h4{
+    color:#ffb3c1;
+    margin:5px 0 15px;
+    font-size:13px;
+}
+
+p{
+    font-size:14px;
+    color:#ffe5ec;
+}
+
+.buttons{
+    margin:20px 0;
+}
+
+.msg{
+    background:#ff4d6d;
+    border:none;
+    padding:10px 22px;
+    border-radius:25px;
+    margin-right:10px;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.msg:hover{
+    background:#e63950;
+}
+
+.follow{
+    background:transparent;
+    border:2px solid #ff4d6d;
+    padding:8px 20px;
+    border-radius:25px;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.follow:hover{
+    background:#ff4d6d;
+}
+
+.skills{
+    margin-top:25px;
+    text-align:left;
+}
+
+.skills h5{
+    margin-bottom:10px;
+    color:#ffb3c1;
+}
+
+.skill-list span{
+    display:inline-block;
+    border:1px solid rgba(255,255,255,0.3);
+    padding:6px 10px;
+    margin:5px;
+    border-radius:15px;
+    font-size:12px;
+    transition:0.3s;
+}
+
+.skill-list span:hover{
+    background:#ff4d6d;
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <span class="pro">PRO</span>
+
+    <img src="anshika.jpeg" class="profile-img">
+
+    <h2>Anshika verma</h2>
+    <h4>Chandigarh</h4>
+
+    <p>User interface designer and <br> front-end developer</p>
+
+    <div class="buttons">
+        <button class="msg">Message</button>
+        <button class="follow">Following</button>
+    </div>
+
+    <div class="skills">
+        <h5>SKILLS</h5>
+        <div class="skill-list">
+            <span>python</span>
+            <span>Front End Development</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>c</span>
+            <span>c++</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
